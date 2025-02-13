@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
 import type { Plugin, ResolvedConfig } from 'vite'
-import type { Options } from '@plugin-web-update-notification/core'
+import type { Options } from '@rsddwqy/plugin-web-update-notification-core'
 
 import {
   DIRECTORY_NAME,
@@ -14,7 +14,7 @@ import {
   getFileHash,
   getVersion,
   get__Dirname,
-} from '@plugin-web-update-notification/core'
+} from '@rsddwqy/plugin-web-update-notification-core'
 
 // /**
 //  * Get the version of the current Vite
@@ -112,7 +112,7 @@ export function webUpdateNotice(options: Options = {}): Plugin {
         isAsset: true,
         type: 'asset',
         name: undefined,
-        source: generateJSONFileContent(version, silence),
+        source: generateJSONFileContent(version, silence, options),
         fileName: `${DIRECTORY_NAME}/${JSON_FILE_NAME}.json`,
       }
 

@@ -3,13 +3,13 @@ English | [简体中文](./README.zh-CN.md)
 # plugin-web-update-notification
 
 <p align="center">
-    <a href="https://unpkg.com/@plugin-web-update-notification/core/dist/webUpdateNoticeInjectScript.js" target="__blank">
-      <img src="https://img.badgesize.io/https://unpkg.com/@plugin-web-update-notification/core/dist/webUpdateNoticeInjectScript.js?compression=gzip&style=flat-square" alt="Gzip Size" />
+    <a href="https://unpkg.com/@rsddwqy/plugin-web-update-notification-core/dist/webUpdateNoticeInjectScript.js" target="__blank">
+      <img src="https://img.badgesize.io/https://unpkg.com/@rsddwqy/plugin-web-update-notification-core/dist/webUpdateNoticeInjectScript.js?compression=gzip&style=flat-square" alt="Gzip Size" />
     </a>
-    <a href="https://www.npmjs.com/package/@plugin-web-update-notification/core" target="__blank">
-      <img src="https://img.shields.io/npm/v/@plugin-web-update-notification/core.svg?style=flat-square&colorB=51C838" alt="NPM Version" />
+    <a href="https://www.npmjs.com/package/@rsddwqy/plugin-web-update-notification-core" target="__blank">
+      <img src="https://img.shields.io/npm/v/@rsddwqy/plugin-web-update-notification-core.svg?style=flat-square&colorB=51C838" alt="NPM Version" />
     </a>
-    <a href="https://www.npmjs.com/package/@plugin-web-update-notification/core" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@plugin-web-update-notification/core?color=50a36f&label="></a>
+    <a href="https://www.npmjs.com/package/@rsddwqy/plugin-web-update-notification-core" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@rsddwqy/plugin-web-update-notification-core?color=50a36f&label="></a>
     <a href="https://github.com/GreatAuk/plugin-web-update-notification/blob/main/LICENSE">
       <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="License" />
     </a>
@@ -46,13 +46,13 @@ Some users do not have the habit of closing web pages. If the front-end page is 
 
 ```bash
 # vite
-pnpm add @plugin-web-update-notification/vite -D
+pnpm add @rsddwqy/plugin-web-update-notification-vite -D
 
 # umijs
-pnpm add @plugin-web-update-notification/umijs -D
+pnpm add @rsddwqy/plugin-web-update-notification-umijs -D
 
 # webpack plugin
-pnpm add @plugin-web-update-notification/webpack -D
+pnpm add @rsddwqy/plugin-web-update-notification-webpack -D
 ```
 
 ## Usage
@@ -101,7 +101,7 @@ Directly disable caching through `html meta` tags:
 // vite.config.ts
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { webUpdateNotice } from '@plugin-web-update-notification/vite'
+import { webUpdateNotice } from '@rsddwqy/plugin-web-update-notification-vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -189,10 +189,10 @@ document.body.addEventListener('plugin_web_update_notice', (e) => {
 ```ts
 // .umirc.ts
 import { defineConfig } from 'umi'
-import type { Options as WebUpdateNotificationOptions } from '@plugin-web-update-notification/umijs'
+import type { Options as WebUpdateNotificationOptions } from '@rsddwqy/plugin-web-update-notification-umijs'
 
 export default {
-  plugins: ['@plugin-web-update-notification/umijs'],
+  plugins: ['@rsddwqy/plugin-web-update-notification-umijs'],
   webUpdateNotification: {
     logVersion: true,
     checkInterval: 0.5 * 60 * 1000,
@@ -210,7 +210,7 @@ export default {
 
 ```js
 // vue.config.js(vue-cli project)
-const { WebUpdateNotificationPlugin } = require('@plugin-web-update-notification/webpack')
+const { WebUpdateNotificationPlugin } = require('@rsddwqy/plugin-web-update-notification-webpack')
 const { defineConfig } = require('@vue/cli-service')
 
 module.exports = defineConfig({
@@ -419,13 +419,13 @@ interface Window {
    // src/shim.d.ts
 
    // if you use vite plugin
-   /// <reference types="@plugin-web-update-notification/vite" />
+   /// <reference types="@rsddwqy/plugin-web-update-notification-vite" />
 
    // if you use umi plugin
-   /// <reference types="@plugin-web-update-notification/umijs" />
+   /// <reference types="@rsddwqy/plugin-web-update-notification-umijs" />
 
    // if you use webpack plugin
-   /// <reference types="@plugin-web-update-notification/webpack" />
+   /// <reference types="@rsddwqy/plugin-web-update-notification-webpack" />
    ```
 
 2. request `version.json` file get `404 error`.

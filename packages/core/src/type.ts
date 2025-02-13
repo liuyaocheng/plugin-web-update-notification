@@ -125,4 +125,5 @@ export type LocaleData = Record<string, NotificationProps>
 export interface VersionJSON {
   version: string
   silence?: boolean
+  options?: any
 }

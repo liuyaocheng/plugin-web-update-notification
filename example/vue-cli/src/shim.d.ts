@@ -1,1 +1,1 @@
-/// <reference types="@plugin-web-update-notification/webpack" />
+/// <reference types="@rsddwqy/plugin-web-update-notification-webpack" />

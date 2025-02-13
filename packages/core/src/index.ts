@@ -175,9 +175,10 @@ export function getVersion(versionType?: VersionType, customVersion?: string) {
  * @param {string} version - git commit hash or packaging time
  * @returns A string
  */
-export function generateJSONFileContent(version: string, silence = false) {
+export function generateJSONFileContent(version: string, silence = false, options?:any) {
   const content: VersionJSON = {
     version,
+    options
   }
   if (silence)
     content.silence = true

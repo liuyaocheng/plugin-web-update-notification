@@ -1,7 +1,7 @@
 import { resolve } from 'path'
 import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'fs'
 import type { IApi } from 'umi'
-import type { Options } from '@plugin-web-update-notification/core'
+import type { Options } from '@rsddwqy/plugin-web-update-notification-core'
 import {
   DIRECTORY_NAME,
   INJECT_SCRIPT_FILE_NAME,
@@ -12,10 +12,10 @@ import {
   generateJsFileContent,
   getFileHash,
   getVersion,
-} from '@plugin-web-update-notification/core'
+} from '@rsddwqy/plugin-web-update-notification-core'
 import { name as pkgName } from '../package.json'
 
-export type { Options } from '@plugin-web-update-notification/core'
+export type { Options } from '@rsddwqy/plugin-web-update-notification-core'
 
 const injectVersionTpl = (version: string) => {
   return `window.pluginWebUpdateNotice_version = '${version}';`
@@ -118,14 +118,14 @@ export default (api: IApi) => {
     const outputPath = resolve(api.userConfig.outputPath || 'dist')
     mkdirSync(`${outputPath}/${DIRECTORY_NAME}`)
 
-    // copy file from @plugin-web-update-notification/core/dist/??.css */ to dist/
+    // copy file from @rsddwqy/plugin-web-update-notification-core/dist/??.css */ to dist/
     copyFileSync(cssFilePath, `${outputPath}/${DIRECTORY_NAME}/${INJECT_STYLE_FILE_NAME}.${cssFileHash}.css`)
 
     // write js file to dist/
     writeFileSync(`${outputPath}/${DIRECTORY_NAME}/${INJECT_SCRIPT_FILE_NAME}.${jsFileHash}.js`, jsFileContent)
 
     // write version json file to dist/
-    writeFileSync(`${outputPath}/${DIRECTORY_NAME}/${JSON_FILE_NAME}.json`, generateJSONFileContent(version, silence))
+    writeFileSync(`${outputPath}/${DIRECTORY_NAME}/${JSON_FILE_NAME}.json`, generateJSONFileContent(version, silence, webUpdateNotificationOptions))
   })
 
   api.modifyHTML(($) => {

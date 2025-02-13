@@ -86,7 +86,7 @@ function __checkUpdateSetup__(options: Options) {
 
         return response.json()
       })
-      .then(({ version: versionFromServer, silence }: VersionJSON) => {
+      .then(({ version: versionFromServer, silence, options: currentOptions }: VersionJSON) => {
         if (silence)
           return
         latestVersion = versionFromServer
@@ -96,6 +96,7 @@ function __checkUpdateSetup__(options: Options) {
             detail: {
               options,
               version: versionFromServer,
+              currentOptions
             },
             bubbles: true,
           }))

@@ -1,2 +1,2 @@
 // if you use vite
-/// <reference types="@plugin-web-update-notification/vite" />
+/// <reference types="@rsddwqy/plugin-web-update-notification-vite" />
