@@ -49,3 +49,39 @@
 2025-02-13T13:20:39.256946Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
 2025-02-13T13:22:48.025189Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json"), AnchoredSystemPathBuf("packages/umi-plugin/package.json"), AnchoredSystemPathBuf("packages/core/package.json"), AnchoredSystemPathBuf("packages/webpack-plugin/package.json"), AnchoredSystemPathBuf("packages/vite-plugin/package.json")}
 2025-02-13T13:22:48.025205Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-02-13T13:40:43.042419Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/injectScript.ts")}
+2025-02-13T13:40:43.043337Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-02-13T13:40:45.236428Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/injectScript.ts")}
+2025-02-13T13:40:45.236438Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-02-13T13:41:59.442338Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/injectScript.ts")}
+2025-02-13T13:41:59.443530Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-02-13T13:42:19.635952Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/injectScript.ts")}
+2025-02-13T13:42:19.636102Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-02-13T13:42:32.635406Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/injectScript.ts")}
+2025-02-13T13:42:32.635416Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-02-13T13:42:41.436104Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/injectScript.ts")}
+2025-02-13T13:42:41.436121Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-02-13T13:42:48.635895Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/src/injectScript.ts")}
+2025-02-13T13:42:48.635908Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-02-13T13:43:10.035758Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/19.cookie")}
+2025-02-13T13:43:10.035775Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-02-13T13:43:10.136856Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/20.cookie")}
+2025-02-13T13:43:10.136867Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-02-13T13:43:13.335361Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/tsup.config.bundled_rcqlbbtto8.mjs")}
+2025-02-13T13:43:13.335371Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-02-13T13:43:13.418792Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-02-13T13:43:15.535360Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/21.cookie"), AnchoredSystemPathBuf("packages/core/tsup.config.injectFile.bundled_t3t1b4d7xzr.mjs")}
+2025-02-13T13:43:15.535373Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }, WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-02-13T13:43:15.600817Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-02-13T13:43:15.635787Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/24.cookie"), AnchoredSystemPathBuf(".turbo/cookies/22.cookie"), AnchoredSystemPathBuf(".turbo/cookies/23.cookie")}
+2025-02-13T13:43:15.635796Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-02-13T13:43:16.037124Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/webpack-plugin/tsup.config.bundled_lvp7763l9p.mjs"), AnchoredSystemPathBuf("packages/umi-plugin/tsup.config.bundled_nf53r43pgv.mjs"), AnchoredSystemPathBuf("packages/vite-plugin/tsup.config.bundled_zhr48971ts.mjs")}
+2025-02-13T13:43:16.037135Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-webpack"), path: AnchoredSystemPathBuf("packages/webpack-plugin") }, WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-umijs"), path: AnchoredSystemPathBuf("packages/umi-plugin") }, WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-vite"), path: AnchoredSystemPathBuf("packages/vite-plugin") }}))
+2025-02-13T13:43:18.436327Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/25.cookie")}
+2025-02-13T13:43:18.436526Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-02-13T13:43:18.534880Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/26.cookie"), AnchoredSystemPathBuf(".turbo/cookies/27.cookie")}
+2025-02-13T13:43:18.534888Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-02-13T13:43:28.335929Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/package.json"), AnchoredSystemPathBuf("packages/webpack-plugin/package.json"), AnchoredSystemPathBuf("package.json"), AnchoredSystemPathBuf("packages/umi-plugin/package.json"), AnchoredSystemPathBuf("packages/vite-plugin/package.json")}
+2025-02-13T13:43:28.335938Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-02-13T13:44:09.037031Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".gitignore")}
+2025-02-13T13:44:09.037079Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))

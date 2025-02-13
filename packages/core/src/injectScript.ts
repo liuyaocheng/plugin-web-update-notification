@@ -78,37 +78,39 @@ function __checkUpdateSetup__(options: Options) {
     checkOnLoadFileError = true,
   } = options
   const checkSystemUpdate = () => {
-    window
-      .fetch(`${injectFileBase}${DIRECTORY_NAME}/${JSON_FILE_NAME}.json?t=${Date.now()}`)
-      .then((response) => {
-        if (!response.ok)
-          throw new Error(`Failed to fetch ${JSON_FILE_NAME}.json`)
+    if (window && window.fetch) {
+      window
+        .fetch(`${injectFileBase}${DIRECTORY_NAME}/${JSON_FILE_NAME}.json?t=${Date.now()}`)
+        .then((response) => {
+          if (!response.ok)
+            throw new Error(`Failed to fetch ${JSON_FILE_NAME}.json`)
 
-        return response.json()
-      })
-      .then(({ version: versionFromServer, silence, options: currentOptions }: VersionJSON) => {
-        if (silence)
-          return
-        latestVersion = versionFromServer
-        if (window.pluginWebUpdateNotice_version !== versionFromServer) {
-          // dispatch custom event
-          document.body.dispatchEvent(new CustomEvent(CUSTOM_UPDATE_EVENT_NAME, {
-            detail: {
-              options,
-              version: versionFromServer,
-              currentOptions
-            },
-            bubbles: true,
-          }))
+          return response.json()
+        })
+        .then(({ version: versionFromServer, silence, options: currentOptions }: VersionJSON) => {
+          if (silence)
+            return
+          latestVersion = versionFromServer
+          if (window.pluginWebUpdateNotice_version !== versionFromServer) {
+            // dispatch custom event
+            document.body.dispatchEvent(new CustomEvent(CUSTOM_UPDATE_EVENT_NAME, {
+              detail: {
+                options,
+                version: versionFromServer,
+                currentOptions,
+              },
+              bubbles: true,
+            }))
 
-          const dismiss = localStorage.getItem(`${LOCAL_STORAGE_PREFIX}${versionFromServer}`) === 'true'
-          if (!hasShowSystemUpdateNotice && !hiddenDefaultNotification && !dismiss)
-            showNotification(options)
-        }
-      })
-      .catch((err) => {
-        console.error('[pluginWebUpdateNotice] Failed to check system update', err)
-      })
+            const dismiss = localStorage.getItem(`${LOCAL_STORAGE_PREFIX}${versionFromServer}`) === 'true'
+            if (!hasShowSystemUpdateNotice && !hiddenDefaultNotification && !dismiss)
+              showNotification(options)
+          }
+        })
+        .catch((err) => {
+          console.error('[pluginWebUpdateNotice] Failed to check system update', err)
+        })
+    }
   }
 
   if (checkImmediately) {
