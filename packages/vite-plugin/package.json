@@ -1,7 +1,7 @@
 {
-  "name": "@plugin-web-update-notification/vite",
+  "name": "@rsddwqy/plugin-web-update-notification-vite",
   "type": "module",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Vite plugin for detect web page updates and notify.",
   "author": "Utopia",
   "license": "MIT",
@@ -17,7 +17,7 @@
   "keywords": [
     "vite",
     "vite-plugin",
-    "@plugin-web-update-notification/vite",
+    "@rsddwqy/plugin-web-update-notification-vite",
     "web-update-notification"
   ],
   "sideEffects": false,
@@ -43,7 +43,7 @@
     "vite": "^6.0.0 || ^5.0.0 || >4.0.0 || ^3.0.0"
   },
   "dependencies": {
-    "@plugin-web-update-notification/core": "workspace:*"
+    "@rsddwqy/plugin-web-update-notification-core": "workspace:*"
   },
   "devDependencies": {
     "vite": "^5.0.2"

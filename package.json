@@ -1,7 +1,7 @@
 {
   "name": "plugin-web-update-notification",
   "type": "module",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "packageManager": "pnpm@7.2.1",
   "description": "Detect web page updates and notify",
   "author": "Utopia",
@@ -39,9 +39,9 @@
   ],
   "scripts": {
     "build": "turbo run build --filter='./packages/*'",
-    "dev:vite": "pnpm --filter=@plugin-web-update-notification/vite dev",
-    "dev:umi": "pnpm --filter=@plugin-web-update-notification/core dev",
-    "dev:webpack": "pnpm --filter=@plugin-web-update-notification/webpack dev",
+    "dev:vite": "pnpm --filter=@rsddwqy/plugin-web-update-notification-vite dev",
+    "dev:umi": "pnpm --filter=@rsddwqy/plugin-web-update-notification-core dev",
+    "dev:webpack": "pnpm --filter=@rsddwqy/plugin-web-update-notification-webpack dev",
     "example:vue-vite": "pnpm --filter=vue-vite-example preview",
     "example:react-vite": "pnpm --filter=react-vite-example preview",
     "example:svelte-vite": "pnpm --filter svelte-vite-example preview",
