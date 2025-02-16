@@ -85,3 +85,18 @@
 2025-02-13T13:43:28.335938Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
 2025-02-13T13:44:09.037031Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".gitignore")}
 2025-02-13T13:44:09.037079Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-02-13T14:07:43.346569Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/tsup.config.bundled_p1h015vcfd.mjs")}
+2025-02-13T14:07:43.346643Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-02-13T14:07:43.459002Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/tsup.config.bundled_p1h015vcfd.mjs")}
+2025-02-13T14:07:43.459010Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-02-13T14:07:43.459023Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-02-13T14:07:45.745853Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/tsup.config.injectFile.bundled_sb92zj6q3pd.mjs")}
+2025-02-13T14:07:45.745875Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-core"), path: AnchoredSystemPathBuf("packages/core") }}))
+2025-02-13T14:07:45.810592Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-02-13T14:07:46.245040Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/webpack-plugin/tsup.config.bundled_11v4jgc9a4zc.mjs"), AnchoredSystemPathBuf("packages/umi-plugin/tsup.config.bundled_jf6rw5csm8.mjs"), AnchoredSystemPathBuf("packages/vite-plugin/tsup.config.bundled_hgixlpszpmt.mjs")}
+2025-02-13T14:07:46.245060Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-umijs"), path: AnchoredSystemPathBuf("packages/umi-plugin") }, WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-vite"), path: AnchoredSystemPathBuf("packages/vite-plugin") }, WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-webpack"), path: AnchoredSystemPathBuf("packages/webpack-plugin") }}))
+2025-02-13T14:08:02.345545Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/umi-plugin/tsup.config.bundled_v8e0ks2ik3n.mjs")}
+2025-02-13T14:08:02.345580Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@rsddwqy/plugin-web-update-notification-umijs"), path: AnchoredSystemPathBuf("packages/umi-plugin") }}))
+2025-02-13T14:08:02.395739Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-02-13T14:08:32.346495Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages/core/package.json"), AnchoredSystemPathBuf("package.json"), AnchoredSystemPathBuf("packages/umi-plugin/package.json"), AnchoredSystemPathBuf("packages/vite-plugin/package.json"), AnchoredSystemPathBuf("packages/webpack-plugin/package.json")}
+2025-02-13T14:08:32.346506Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)

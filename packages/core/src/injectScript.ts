@@ -108,7 +108,7 @@ function __checkUpdateSetup__(options: Options) {
           }
         })
         .catch((err) => {
-          console.error('[pluginWebUpdateNotice] Failed to check system update', err)
+          // console.error('[pluginWebUpdateNotice] Failed to check system update', err)
         })
     }
   }
