@@ -154,7 +154,8 @@ function __checkUpdateSetup__(options: Options) {
       'error',
       (err) => {
         const errTagName = (err?.target as any)?.tagName
-        if (errTagName === 'SCRIPT')
+        const rel = (err?.target as any)?.rel
+        if ((errTagName === 'SCRIPT' || errTagName === 'LINK') && rel === 'modulepreload')
           checkSystemUpdate()
       },
       true,
